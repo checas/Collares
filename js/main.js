@@ -10,8 +10,102 @@
     horizontalScrolling: false,
     hideDistantElements: false,
     scrollProperty: 'scroll'
-  });
+});
 
+	// JS para botones modal
+	const btn_azul = document.getElementById("modal__btn__azul");
+	const btn_rojo = document.getElementById("modal__btn__rojo");
+	const btn_amarillo = document.getElementById("modal__btn__amarillo");
+	const btn_verde = document.getElementById("modal__btn__verde");
+	const btn_naranja = document.getElementById("modal__btn__naranja");
+	const btn_rosa = document.getElementById("modal__btn__rosa");
+	const btn_morado = document.getElementById("modal__btn__morado");
+	const btn_blanco = document.getElementById("modal__btn__blanco");
+	const btn_negro = document.getElementById("modal__btn__negro");
+
+	const collar1 = document.getElementById("collar-left");
+	const collar2 = document.getElementById("collar-right");
+
+	btn_azul.addEventListener('click', (event)=> {
+		collar1.style.background = "blue";
+		collar2.style.background = "blue";
+	});
+	btn_rojo.addEventListener('click', (event)=> {
+		collar1.style.background = "red";
+		collar2.style.background = "red";
+	});
+	btn_amarillo.addEventListener('click', (event)=> {
+		collar1.style.background = "yellow";
+		collar2.style.background = "yellow";
+	});
+	btn_verde.addEventListener('click', (event)=> {
+		collar1.style.background = "green";
+		collar2.style.background = "green";
+	});
+	btn_naranja.addEventListener('click', (event)=> {
+		collar1.style.background = "orange";
+		collar2.style.background = "orange";
+	});
+	btn_rosa.addEventListener('click', (event)=> {
+		collar1.style.background = "pink";
+		collar2.style.background = "pink";
+	});
+	btn_morado.addEventListener('click', (event)=> {
+		collar1.style.background = "purple";
+		collar2.style.background = "purple";
+	});
+	btn_blanco.addEventListener('click', (event)=> {
+		collar1.style.background = "white";
+		collar2.style.background = "white";
+	});
+	btn_negro.addEventListener('click', (event)=> {
+		collar1.style.background = "black";
+		collar2.style.background = "black";
+	});
+
+	const btn_circulo = document.getElementById("modal__btn__circulo");
+	const btn_cuadrado = document.getElementById("modal__btn__cuadrado");
+	const btn_rectangulo = document.getElementById("modal__btn__rectangulo");
+	const btn_triangulo = document.getElementById("modal__btn__triangulo");
+	const btn_hexagono = document.getElementById("modal__btn__hexagono");
+	const btn_estrella = document.getElementById("modal__btn__estrella");
+	const btn_corazon = document.getElementById("modal__btn__corazon");
+	const btn_hueso = document.getElementById("modal__btn__hueso");
+	const btn_pez = document.getElementById("modal__btn__pez");
+
+	const icono = document.getElementById("modal__icono");
+
+	btn_circulo.addEventListener('click', (event)=> {
+		icono.className="flaticon-dry-clean";
+	});
+	btn_cuadrado.addEventListener('click', (event)=> {
+		icono.className="flaticon-square";
+	});
+	btn_rectangulo.addEventListener('click', (event)=> {
+		icono.className="flaticon-rectangle";
+	});
+	btn_triangulo.addEventListener('click', (event)=> {
+		icono.className="flaticon-bleach";
+	});
+	btn_hexagono.addEventListener('click', (event)=> {
+		icono.className="flaticon-hexagon-1";
+	});
+	btn_estrella.addEventListener('click', (event)=> {
+		icono.className="flaticon-star";
+	});
+	btn_corazon.addEventListener('click', (event)=> {
+		icono.className="flaticon-heart";
+	});
+	btn_hueso.addEventListener('click', (event)=> {
+		icono.className="flaticon-bone";
+	});
+	btn_pez.addEventListener('click', (event)=> {
+		icono.className="flaticon-fish";
+	});
+
+
+
+	// Fin JS para botones modal
 
 	var fullHeight = function() {
 

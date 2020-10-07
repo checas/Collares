@@ -195,7 +195,7 @@
 					</div>
 					<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
 						<div class="card">
-							<div class="card-header p-0" id="headingOne">
+							<div class="card-header p-0" id="headingOne" role="tab">
 								<h2 class="mb-0">
 									<button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
 										<p class="mb-0">¿Por qué elegirnos</p>
@@ -203,18 +203,17 @@
 									</button>
 								</h2>
 							</div>
-							<div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+							<div class="collapse" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
 								<div class="card-body py-3 px-0">
-									<ol>
+									<ul>
 										<li>Pulusas es un collar inteligente</li>
 										<li>Te permite acceder a los datos de mascota en todo momento</li>
 										<li>En caso de extravio, quien lo encuentre te podrá contactar de forma inmediata</li>
 										<li>Muy sencillo de usar, solo necesitas tu celular</li>
-									</ol>
+									</ul>
 								</div>
 							</div>
 						</div>
-
 						<div class="card">
 							<div class="card-header p-0" id="headingTwo" role="tab">
 								<h2 class="mb-0">
@@ -226,22 +225,22 @@
 							</div>
 							<div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
 								<div class="card-body py-3 px-0">
-									<ol>
+									<ul>
 										<li>Es para cualquier tipo de mascota</li>
-									</ol>
+									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header p-0" id="headingTwo" role="tab">
+							<div class="card-header p-0" id="headingThree" role="tab">
 								<h2 class="mb-0">
-									<button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+									<button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
 										<p class="mb-0">¿Cómo funciona?</p>
 										<i class="fa" aria-hidden="true"></i>
 									</button>
 								</h2>
 							</div>
-							<div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
 								<div class="card-body py-3 px-0">
 									<ol>
 										<li>Con tu celular en mano abre la camara</li>
@@ -252,15 +251,15 @@
 							</div>
 						</div>
 						<div class="card">
-							<div class="card-header p-0" id="headingTwo" role="tab">
+							<div class="card-header p-0" id="headingFour" role="tab">
 								<h2 class="mb-0">
-									<button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+									<button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
 										<p class="mb-0">¿Cómo comprar?</p>
 										<i class="fa" aria-hidden="true"></i>
 									</button>
 								</h2>
 							</div>
-							<div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingFour">
 								<div class="card-body py-3 px-0">
 									<ol>
 										<li>Elige el modelo y los detalles</li>
@@ -439,7 +438,10 @@
 								<li>Práctico</li>
 								<li>Económico</li>
 							</ul>
-							<a href="#" class="btn btn-primary d-block px-2 py-3">Comprar</a>
+							<!-- <a href="#" class="btn btn-primary d-block px-2 py-3">Comprar</a> -->
+							<button type="button" class="btn btn-primary d-block px-2 py-3" data-toggle="modal" data-target="#exampleModal">
+								Comprar
+							</button>
 						</div>
 					</div>
 				</div>
@@ -454,7 +456,10 @@
 								<li>Seguro</li>
 								<li>Rorfazdo</li>
 							</ul>
-							<a href="#" class="btn btn-primary d-block px-2 py-3">Comprar</a>
+							<!-- <a href="#" class="btn btn-primary d-block px-2 py-3">Comprar</a> -->
+							<button type="button" class="btn btn-primary d-block px-2 py-3" data-toggle="modal" data-target="#exampleModal">
+								Comprar
+							</button>
 						</div>
 					</div>
 				</div>
@@ -469,13 +474,95 @@
 								<li>Excelente calidad</li>
 								<li>Super resistente</li>
 							</ul>
-							<a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
+							<!-- <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a> -->
+							<button type="button" class="btn btn-primary d-block px-2 py-3" data-toggle="modal" data-target="#exampleModal">
+								Comprar
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-    </section>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Perzonaliza el collar</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="dropdown">
+							<div class="row mb-3">
+								<div class="col-6">
+									<div class="dropdown">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Color
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+											<button id="modal__btn__azul" class="dropdown-item" type="button">Azul</button>
+											<button id="modal__btn__rojo"class="dropdown-item" type="button">Rojo</button>
+											<button id="modal__btn__amarillo" class="dropdown-item" type="button">Amarillo</button>
+											<button id="modal__btn__verde" class="dropdown-item" type="button">Verde</button>
+											<button id="modal__btn__naranja" class="dropdown-item" type="button">Naranja</button>
+											<button id="modal__btn__rosa" class="dropdown-item" type="button">Rosa</button>
+											<button id="modal__btn__morado" class="dropdown-item" type="button">Morado</button>
+											<button id="modal__btn__blanco" class="dropdown-item" type="button">Blanco</button>
+											<button id="modal__btn__negro" class="dropdown-item" type="button">Negro</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-6 align-items-center justify-content-center">
+									<div id="collar-left"></div>
+									<div id="collar-right"></div>
+								</div>
+							</div>
+							<div class="row mb-2">
+								<div class="col-6">
+									<div class="dropdown">
+										<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Diseño
+										</button>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+											<button id="modal__btn__circulo" class="dropdown-item" type="button">Circulo</button>
+											<button id="modal__btn__cuadrado" class="dropdown-item" type="button">Cuadrado</button>
+											<button id="modal__btn__rectangulo" class="dropdown-item" type="button">Rectangulo</button>
+											<button id="modal__btn__triangulo" class="dropdown-item" type="button">Triangulo</button>
+											<button id="modal__btn__hexagono" class="dropdown-item" type="button">Hexagono</button>
+											<button id="modal__btn__estrella" class="dropdown-item" type="button">Estrella</button>
+											<button id="modal__btn__corazon" class="dropdown-item" type="button">Corazon</button>
+											<button id="modal__btn__hueso" class="dropdown-item" type="button">Hueso</button>
+											<button id="modal__btn__pez" class="dropdown-item" type="button">Pez</button>
+										</div>
+									</div>
+								</div>
+								<div id="modal__col__icono" class="col-6">
+									<span id="modal__icono" class="flaticon-dry-clean"></span>
+									<!-- <span class="flaticon-pets"></span>
+									<span class="flaticon-dry-clean"></span>
+									<span class="flaticon-square"></span>
+									<span class="flaticon-rectangle"></span>
+									<span class="flaticon-bleach"></span>
+									<span class="flaticon-star"></span>
+									<span class="flaticon-bone"></span>
+									<span class="flaticon-hexagon"></span>
+									<span class="flaticon-hexagon-1"></span>
+									<span class="flaticon-fish"></span>
+									<span class="flaticon-heart"></span>
+									<span class="flaticon-collar"></span> -->
+								</div>
+							</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-primary">Comprar!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- Fin Precios -->
 	<!-- Galeria -->
 	<section id="galeria" class="ftco-section">

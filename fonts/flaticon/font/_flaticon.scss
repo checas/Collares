@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 01/10/2020 14:10
+    Creation date: 07/10/2020 21:37
     */
 
     @font-face {
@@ -37,7 +37,7 @@
   font-smoothing: antialiased;
     }
 
-.flaticon-qr-code:before { content: "\f100"; }
+    .flaticon-qr-code:before { content: "\f100"; }
 .flaticon-pets:before { content: "\f101"; }
 .flaticon-browser:before { content: "\f102"; }
 .flaticon-smartphone:before { content: "\f103"; }
@@ -54,6 +54,7 @@
 .flaticon-hexagon-1:before { content: "\f10e"; }
 .flaticon-fish:before { content: "\f10f"; }
 .flaticon-heart:before { content: "\f110"; }
+.flaticon-collar:before { content: "\f111"; }
     
     $font-Flaticon-qr-code: "\f100";
     $font-Flaticon-pets: "\f101";
@@ -72,3 +73,4 @@
     $font-Flaticon-hexagon-1: "\f10e";
     $font-Flaticon-fish: "\f10f";
     $font-Flaticon-heart: "\f110";
+    $font-Flaticon-collar: "\f111";
