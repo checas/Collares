@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 01/10/2020 14:10
+  	Creation date: 07/10/2020 21:37
   	*/
 
 @font-face {
@@ -47,3 +47,4 @@ margin-left: 20px;
 .flaticon-hexagon-1:before { content: "\f10e"; }
 .flaticon-fish:before { content: "\f10f"; }
 .flaticon-heart:before { content: "\f110"; }
+.flaticon-collar:before { content: "\f111"; }

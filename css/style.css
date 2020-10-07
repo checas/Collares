@@ -9767,6 +9767,36 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
+#collar-right {
+  width: 60px;
+  height: 10px;
+  top: 18px;
+  left: 24px;
+  background: blue;
+  position: absolute;
+  transform: rotate(15deg);
+  border: 1px solid rgba(0,0,0,.8);
+}
+
+#collar-left {
+  width: 60px;
+  height: 10px;
+  top: 18px;
+  left: 80px;
+  background: blue;
+  position: absolute;
+  transform: rotate(-15deg);
+  border: 1px solid rgba(0,0,0,.8);
+}
+
+#modal__col__icono{
+  left: 52px;
+  font-size: 30px;
+}
+#modal__icono{
+  left: 50px;
+}
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
